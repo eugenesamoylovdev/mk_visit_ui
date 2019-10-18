@@ -1,0 +1,110 @@
+<html>
+  <head>
+
+    <!-- head -->
+    <meta charset="utf-8">
+	
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owl.theme.default.min.css">
+    <link rel="stylesheet" href="lib/font-awesome.min.css">
+
+    <!-- javascript -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/owl.carousel.min.js"></script>
+    <script src="https://use.fontawesome.com/484e45f197.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$('.owl-carousel').owlCarousel({
+
+				items:8,
+				loop:true,
+				margin:20,
+				nav:true,
+				navText:[
+							'<i class="fa fa-angle-left fa-4x"></i>',
+							'<i class="fa fa-angle-right fa-4x"></i>'
+						],
+				autoplay:true,
+				smartSpeed:1000, //Время движения слайда
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                dots:false,
+                pagination:true,
+
+                responsive:{
+        						0:{
+            						items:1,
+            						nav:true,
+            						loop:true
+        						},
+        						400:{
+            						items:3,
+           	 						nav:true,
+            						loop:true
+        						},
+        						600:{
+            						items:4,
+           	 						nav:true,
+            						loop:true
+        						},
+        						
+        						1000:{
+            						items:8,
+            						nav:true,
+            						loop:true
+        						}
+    						}
+	 	 			
+
+			});
+		});
+	</script>
+	
+	<style>
+	.owl-buttons{
+		position: relative;
+	}
+	.owl-prev {
+		position: absolute;
+		left: -5px;
+		top: 15%;
+		color: #f0f0f0 !important;
+		background-color: transparent !important;
+	}
+
+	.owl-next {
+		position: absolute;
+		right: -5px;
+		top: 15%;
+		color: #f0f0f0 !important;
+		background-color: transparent !important;
+	} 	
+	</style>
+		
+	
+  </head>
+  
+  <body>
+  
+		<!-- Set up your HTML -->
+		<div class="owl-carousel owl-theme" style="max-width:100%; margin: auto;">
+			<div class="item"> <img src="img/l1.jpg"> </div>
+			<div class="item"> <img src="img/l2.jpg"> </div>
+			<div class="item"> <img src="img/l3.jpg"> </div>
+			<div class="item"> <img src="img/l4.jpg"> </div>
+			<div class="item"> <img src="img/l5.jpg"> </div>
+			<div class="item"> <img src="img/l6.jpg"> </div>
+			<div class="item"> <img src="img/l7.jpg"> </div>
+			<div class="item"> <img src="img/l8.jpg"> </div>
+			<div class="item"> <img src="img/l9.png"> </div>
+			<div class="item"> <img src="img/l10.png"> </div>
+			<div class="item"> <img src="img/l11.jpg"> </div>
+			<div class="item"> <img src="img/l12.jpg"> </div>
+			<div class="item"> <img src="img/l13.jpg"> </div>
+		</div>
+  
+  
+  </body>
+</html>
