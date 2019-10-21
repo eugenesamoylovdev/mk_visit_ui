@@ -8,7 +8,7 @@
  */
  @font-face {
   font-family: "mkHelvetica";
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   src: url(../media/fonts/Helvetica\ Neue\ thin.ttf) format("ttf");
  }
@@ -104,12 +104,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 :root {
-  --header-color: #324b7d;
+  --mk__blue: rgb(20 45 80);
   --text-color: rgb(125 210 235);
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "mkHelvetica", sans-serif;
   color: var(--text-color);
+}
+p {
+  font-family: "mkHelvetica", sans-serif;
+  font-size: 18px;
+  color: var(--mk__blue);
+}
+.mk__footer {
+  background-color: #cfcfcf;
 }
 
 .logo-wrap {
@@ -124,10 +132,15 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
 }
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 3;
-  background-color: var(--header-color);
+  background-color: var(--mk__blue);
+}
+.header__nav--wrap {
+  text-align: center;
+  padding-left: 45px;
+
 }
 .nav {
   text-align: center;
@@ -139,13 +152,67 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   font-family: "mkHelvetica", sans-serif;
   line-height: 1.5;
-  color: #ffffff;
+  color:#808080;
+  font-weight: normal;
   text-transform: uppercase;
-  margin-right: 47px;
-  font-size: 16px;
+  margin-right: 55px;
+  font-size: 18px;
   text-decoration: none;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
+}
+.nav__item:hover {
+  color: #ffffff;
+}
+.slider {
+  position: relative;
+  margin-top: 76px;
+  padding: 0;
+}
+.owl-buttons{
+  position: relative;
+}
+.owl-prev {
+  position: absolute;
+  left: -5px;
+  top: 40%;
+  color: #000 !important;
+  background-color: transparent !important;
+
+}
+
+.owl-next {
+  position: absolute;
+  right: -5px;
+  top: 40%;
+  color: #000 !important;
+  background-color: transparent !important;
+} 
+.owl-dots{
+  position: relative;
+  padding-top: 0;
+  margin-top: -30px;
+  z-index: 3;
+}
+.footer {
+  padding-bottom: 20px;
+}
+.footer__item-content {
+  margin-left: 30px;
+}
+.footer__item-title {
+  font-size: 20px;
+  font-family: "mkHelvetica", sans-serif;
+  font-weight: bolder;
+  color: var(--mk__blue);
+  display: inline-block;
+  margin-top: 20px;
+}
+.footer__item-content p{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 30px;
+  text-align: left;
 }
 /* ==========================================================================
    Helper classes
