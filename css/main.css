@@ -166,9 +166,14 @@ p {
 }
 .slider {
   position: relative;
-  margin-top: 76px;
+  margin-top: 75px;
   padding: 0;
+  height: 100%;
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
+
 .owl-buttons{
   position: relative;
 }
@@ -191,7 +196,7 @@ p {
 .owl-dots{
   position: relative;
   padding-top: 0;
-  margin-top: -30px;
+  margin-top: -180px;
   z-index: 3;
 }
 .footer {
@@ -214,6 +219,8 @@ p {
   padding-right: 30px;
   text-align: left;
 }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
