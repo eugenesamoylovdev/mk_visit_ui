@@ -8,7 +8,7 @@
  */
  @font-face {
   font-family: "mkHelvetica";
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
   src: url(../media/fonts/Helvetica\ Neue\ thin.ttf) format("ttf");
  }
@@ -105,11 +105,13 @@ textarea {
    ========================================================================== */
 :root {
   --mk__blue: rgb(20 45 80);
-  --text-color: rgb(125 210 235);
+  --text-color: #000;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "mkHelvetica", sans-serif;
-  color: var(--text-color);
+  color: var(--mk__blue);
+  font-size: 25px;
+  font-weight: lighter;
 }
 p {
   font-family: "mkHelvetica", sans-serif;
@@ -118,6 +120,11 @@ p {
 }
 .mk__footer {
   background-color: #cfcfcf;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
 }
 
 .logo-wrap {
@@ -136,7 +143,9 @@ p {
   width: 100%;
   z-index: 3;
   background-color: var(--mk__blue);
+  margin-bottom: 10px;
 }
+
 .header__nav--wrap {
   text-align: center;
   padding-left: 45px;
@@ -166,38 +175,107 @@ p {
 }
 .slider {
   position: relative;
-  margin-top: 75px;
-  padding: 0;
+  padding-top: 75px;
   height: 100%;
   display: block;
-  margin-bottom: 10px;
   overflow: hidden;
 }
 
-.owl-buttons{
+.owl-one .owl-buttons {
   position: relative;
 }
-.owl-prev {
+.owl-one .owl-prev {
   position: absolute;
   left: -5px;
-  top: 40%;
-  color: #000 !important;
+  top: 50%;
+  color:rgb(247, 247, 247) !important;
   background-color: transparent !important;
 
 }
 
-.owl-next {
+.owl-one .owl-next {
   position: absolute;
   right: -5px;
-  top: 40%;
-  color: #000 !important;
+  top: 50%;
+  color: rgb(247, 247, 247) !important;
   background-color: transparent !important;
 } 
-.owl-dots{
+.owl-one .owl-dots {
   position: relative;
   padding-top: 0;
   margin-top: -180px;
   z-index: 3;
+}
+
+.cosmetics__title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cosmetics__item{
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.cosmetics__item-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: solid;
+  border-color: rgb(247, 247, 247);
+  border-width: 5px;
+  background-color:rgb(247, 247, 247);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0;
+  margin-left: 30%;
+}
+.cosmetics__text {
+  text-align: center;
+  font-size: 22px;
+}
+.cosmetics__foto {
+  widows: 373px;
+  height: 215px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cosmetics__carousel {
+  position: relative;
+  height: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.owl-two .owl-buttons {
+  position: relative;
+}
+.owl-two .owl-prev {
+  position: absolute;
+  left: -30px;
+  top: 15%;
+  color:#f0f0f0 !important;
+  background-color: transparent !important;
+}
+.owl-two .owl-next {
+  position: absolute;
+  right: -30px;
+  top: 15%;
+  color: #f0f0f0 !important;
+  background-color: transparent !important;
+} 
+.stuff__item{
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.stuff__foto {
+  widows: 373px;
+  height: 354px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .footer {
   padding-bottom: 20px;
