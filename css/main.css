@@ -145,7 +145,16 @@ p {
   background-color: var(--mk__blue);
   margin-bottom: 10px;
 }
+.header__container {
+  max-width: 1580px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+}
 .header__nav--wrap {
   text-align: center;
   padding-left: 45px;
@@ -175,7 +184,7 @@ p {
 }
 .slider {
   position: relative;
-  padding-top: 75px;
+  padding-top: 73px;
   height: 100%;
   display: block;
   overflow: hidden;
@@ -236,7 +245,7 @@ p {
   font-size: 22px;
 }
 .cosmetics__foto {
-  widows: 373px;
+  width: 373px;
   height: 215px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -269,13 +278,17 @@ p {
   position: relative;
   display: block;
   text-align: center;
+  font-size: 22px;
 }
 .stuff__foto {
-  widows: 373px;
-  height: 354px;
+  width: 373px;
+  height: 215px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.stuff__title {
+  font-size: 22px;
 }
 .footer {
   padding-bottom: 20px;
@@ -297,8 +310,59 @@ p {
   padding-right: 30px;
   text-align: left;
 }
+.burger {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .burger {
+      display: block;
+      width: 40px;
+      height: 14px;
+      margin-top: 23px;
+      margin-bottom: 23px;
+      margin-left: 47%;
+    }
+  .burger:hover {
+      cursor: pointer;
+    }
+  .burger.is-active {
+      height: 30px;
+      margin-left: 0;
+    }
+  .burger__line {
+      width: 40px;
+      height: 2px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      position: relative;
+    }
+  .burger.is-active .burger__line-top {
+      transform: rotate(-45deg);
+      top: 12px;
+    }
+  .burger.is-active .burger__line-bottom {
+      transform: rotate(45deg);
+    }
 
-
+  .header__container {
+      display: block;
+    }
+  .header__nav--wrap {
+      text-align: center;
+      display: none;
+    }
+  .header__nav--wrap.is-active {
+      display: block;
+    }
+  .nav--header {
+      display: inline-block;
+    }
+  .nav__item {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -67,4 +67,9 @@
           
 
     });
+
+    $(document).on('click', '.burger', function(){
+      $(this).toggleClass('is-active');
+      $('.header__nav--wrap').toggleClass('is-active');
+  })
   });
