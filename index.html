@@ -14,8 +14,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="cool_slider/lib/owl.carousel.min.css">
-  <link rel="stylesheet" href="cool_slider/lib/owl.theme.default.min.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/brands.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/solid.css">
+  <link rel="stylesheet" href="css/all.css">
   <script src="https://use.fontawesome.com/484e45f197.js"></script>
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -35,10 +39,14 @@
   </div>
   <header class="header">
     <div class="header__container">
-        <div class="burger">
-            <div class="burger__line burger__line-top"></div>
-            <div class="burger__line burger__line-bottom"></div>
-          </div>  
+      <div class="header__respons">
+          <span class="nav__item-respons">МЕНЮ</span>  
+          <div class="burger">
+              <div class="burger__line burger__line-top"></div>
+              <div class="burger__line burger__line-middle"></div>
+              <div class="burger__line burger__line-bottom"></div>
+          </div>
+      </div>
       <div class="header__nav--wrap">
         <nav class="nav nav--header">
          <a href="#" class="nav__item">ГЛАВНАЯ</a>
@@ -50,16 +58,26 @@
       </div>
     </div>
   </header>
-  <section class="slider">
-        <div class="visible-lg">  
+  <section>
+     <!-- <div class="slider__wrap">-->
+        <div class="visible-sm">
         <div class="owl-one owl-carousel owl-theme">
           <img src="media/slider/slider1.jpg" alt="s1">
-          <img src="media/slider/slider2.jpg" alt="s2">
-          <img src="media/slider/slider3.jpg" alt="s3">
-          <img src="media/slider/slider4.jpg" alt="s4">
+          <img src="media/slider/slider2.png" alt="s2">
+          <img src="media/slider/slider3.png" alt="s3">
+          <img src="media/slider/slider4.png" alt="s4">
         </div>
-    </div>   
-</section>
+    </div>
+  </section> 
+  <!--  <div class="visible-sm visible-xs">
+        <div class="owl-one owl-carousel owl-theme">
+            <img src="media/slider/slider1.jpg" alt="s1">
+            <img src="media/slider/slider2.jpg" alt="s2">
+            <img src="media/slider/slider3.jpg" alt="s3">
+            <img src="media/slider/slider4.jpg" alt="s4">
+        </div>
+    </div>-->
+</div>
 <section class="cosmetics">
   <div class="container">
     <div class="row">
@@ -68,22 +86,22 @@
       </div>
    </div>
     <div class="row">
-      <div class="col-4">
+      <div class="col-12 col-sm-4">
         <div class="cosmetics__item">
           <div class="cosmetics__item-img" style="background-image: url(media/content/ih4.png);"></div>
-          <h1>Окрашивание</h1>
+          <h1 class="cosmetics__text">Окрашивание</h1>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-sm-4">
           <div class="cosmetics__item">
             <div class="cosmetics__item-img" style="background-image: url(media/content/ih5.png);"></div>
-            <h1>Уход</h1>
+            <h1 class="cosmetics__text">Уход</h1>
           </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-sm-4">
           <div class="cosmetics__item">
               <div class="cosmetics__item-img" style="background-image: url(media/content/ih6.png);"></div>
-            <h1>Стайлинг</h1>
+            <h1 class="cosmetics__text">Стайлинг</h1>
           </div>
       </div>
     </div>
@@ -93,13 +111,13 @@
       </div>
     </div> 
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-sm-4">
             <div class="cosmetics__foto" style="background-image: url(media/content/gh1.jpg);"></div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-sm-4">
             <div class="cosmetics__foto" style="background-image: url(media/content/gh2.jpg);"></div> 
         </div>
-        <div class="col-4">
+        <div class="col-12 col-sm-4">
             <div class="cosmetics__foto" style="background-image: url(media/content/gh3.jpg);"></div>
       </div>
    </div> 
@@ -137,22 +155,22 @@
           </div>
        </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-sm-4">
             <div class="cosmetics__item">
               <div class="cosmetics__item-img" style="background-image: url(media/content/ih1.png);"></div>
-              <h1>Машинки</h1>
+              <h1 class="cosmetics__text">Машинки</h1>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-4">
               <div class="cosmetics__item">
                 <div class="cosmetics__item-img" style="background-image: url(media/content/ih2.png);"></div>
-                <h1>Щипцы и плойки</h1>
+                <h1 class="cosmetics__text">Щипцы и плойки</h1>
               </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-4">
               <div class="cosmetics__item">
                   <div class="cosmetics__item-img" style="background-image: url(media/content/ih3.png);"></div>
-                <h1>Аксессуары</h1>
+                <h1 class="cosmetics__text">Аксессуары</h1>
               </div>
           </div>
         </div>
@@ -181,19 +199,19 @@
 <section class="stuff">
   <div class="container">
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="stuff__item">
             <h1>Маникюр</h1>
             <div class="stuff__foto" style="background-image: url(media/content/gh4.jpg);"></div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="stuff__item">
             <h1>Депиляция</h1>
             <div class="stuff__foto" style="background-image: url(media/content/gh5.jpg);"></div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="stuff__item">
             <h1>Лаки</h1>
             <div class="stuff__foto" style="background-image: url(media/content/gh10.jpg);"></div>
@@ -210,57 +228,80 @@
 <footer class="footer mk__footer">
   <div class="container">
     <div class="row">
-      <div class="col-4">
+      <div class="col-12 col-lg-4">
         <div class="footer__item">
           <div class="footer__item-content">
             <span class="footer__item-title">Смоленск</span>
-            <p>214000, ул.Ленина, д.16
-                8(4812)65-67-36
-                profalfa@yandex.ru</p>
+            <br>
+            <span class="footer__item-links">214000, ул.Ленина, д.16</span>
+            <br>
+            <a href="tel:8(4812)65-67-36" class="footer__item-links">8(4812)65-67-36</a>
+            <br>
+            <a href="mailto:profalfa@yandex.ru" class="footer__item-links">profalfa@yandex.ru</a>
           </div>
         </div>
         <div class="footer__item">
-            <div class="footer__item-content">
-              <span class="footer__item-title">Брянск</span>
-              <p>241020, пр-т Московский, д.67-а
-                  8(4832)63-55-04
-                  alfaprof32@yandex.ru</p>
+          <div class="footer__item-content">
+            <span class="footer__item-title">Брянск</span>
+            <br>
+            <span class="footer__item-links">241020, пр-т Московский, д.67-а</span>
+            <br>
+            <a href="tel:8(4832)63-55-04" class="footer__item-links">8(4832)63-55-04</a>
+            <br>
+            <a href="mailto:alfaprof32@yandex.ru" class="footer__item-links">alfaprof32@yandex.ru</a>
             </div>
           </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4">
+        <div class="footer__item">
+          <div class="footer__item-content">
+            <span class="footer__item-title">Орел</span>
+            <br>
+            <span class="footer__item-links">302001, ул.Комсомольская, д.25</span>
+            <br>
+            <a href="tel:8(4862)44-23-12" class="footer__item-links">8(4862)44-23-12</a>
+            <br>
+            <a href="mailto:alfaorel57@yandex.ru" class="footer__item-links">alfaorel57@yandex.ru</a>
+          </div>
+        </div>
           <div class="footer__item">
             <div class="footer__item-content">
-              <span class="footer__item-title">Орел</span>
-              <p>302001, ул.Комсомольская, д.25
-                  8(4862)44-23-12
-                  alfaorel57@yandex.ru</p>
+              <span class="footer__item-title">Калуга</span>
+              <br>
+              <span class="footer__item-links">248000, ул.Рылеева, д.19</span>
+              <br>
+              <a href="tel:8(4842)76-26-76" class="footer__item-links">8(4842)76-26-76</a>
+              <br>
+              <a href="mailto:alfaprof42@yandex.ru" class="footer__item-links">alfaprof42@yandex.ru</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 col-lg-4">
+          <div class="footer__item">
+            <div class="footer__item-content">
+              <span class="footer__item-title">Курск</span>
+              <br>
+              <span class="footer__item-links">305003, пр.Хрущева, д.28/28а</span>
+              <br>
+              <a href="tel:8(4712)55-09-06" class="footer__item-links">8(4712)55-09-06</a>
+              <br>
+              <a href="mailto:alfaprof46@yandex.ru" class="footer__item-links">alfaprof46@yandex.ru</a>
             </div>
           </div>
           <div class="footer__item">
               <div class="footer__item-content">
-                <span class="footer__item-title">Калуга</span>
-                <p>248000, ул.Рылеева, д.19
-                    8(4842)76-26-76
-                    alfaprof42@yandex.ru</p>
-              </div>
-            </div>
-        </div>
-      <div class="col-4">
-          <div class="footer__item">
-            <div class="footer__item-content">
-              <span class="footer__item-title">Курск</span>
-                <p>305003, пр.Хрущева, д.28/28а
-                    8(4712)55-09-06
-                    alfaprof46@yandex.ru</p>
-              </div>
-            </div>
-            <div class="footer__item">
-                <div class="footer__item-content">
-                  
-                </div>
+                  <a href="mailto:profalfa@yandex.ru" class="footer__item-links">
+                    <i class="fa fa-envelope-o fa-2x"></i>
+                  </a>
+                  <a href="https://vk.com/sm_mk" class="footer__item-links">
+                    <i class="fa fa-vk fa-2x"></i>
+                  </a>
+                  <a href="http://instagram.com/mk_shopprof">
+                    <i class="fa fa-instagram fa-2x"></i>
+                  </a>
               </div>
           </div>
+        </div>
     </div>
   </div>
 </footer>
@@ -271,8 +312,8 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="cool_slider/lib/jquery.min.js"></script>
-  <script src="cool_slider/lib/owl.carousel.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
  
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

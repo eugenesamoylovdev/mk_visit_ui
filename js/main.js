@@ -11,6 +11,7 @@
             '<i class="fa fa-angle-right fa-4x"></i>'
           ],
       autoplay:true,
+      autoHeight:true,
       smartSpeed:3000, //Время движения слайда
               autoplayTimeout:5000,
               autoplayHoverPause:true,
@@ -18,8 +19,12 @@
               dotsEach:true,
               lazyLoad:true,
       pagination:true,
+      responsiveClass:true,
       animateIn: 'fadeIn',
               animateOut: 'fadeOut'
+
+
+              
        
     });
 
@@ -71,5 +76,7 @@
     $(document).on('click', '.burger', function(){
       $(this).toggleClass('is-active');
       $('.header__nav--wrap').toggleClass('is-active');
+      $('.nav__item-respons').toggleClass('is-active');
+      $('.header__respons').toggleClass('is-active');
   })
   });
