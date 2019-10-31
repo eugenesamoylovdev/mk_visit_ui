@@ -111,6 +111,7 @@ textarea {
 :root {
   --mk__blue: rgb(20 45 80);
   --text-color: #000;
+  --mk__grey: #808080;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "mkHelvetica", sans-serif;
@@ -148,33 +149,34 @@ p {
   width: 100%;
   z-index: 3;
   background-color: var(--mk__blue);
+  display: block;
 }
 .header__container {
   max-width: 1580px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /*max-height: 73px;*/
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
 }
 .header__nav--wrap {
   text-align: center;
-  padding-left: 45px;
-
+  padding: 0;
+  justify-content: center;
+  display: block;
 }
 .nav {
   text-align: center;
   line-height: 1;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  /*margin-top: 23px;
+  margin-bottom: 23px;*/
 }
 .nav__item {
   display: inline-block;
   font-family: "mkHelvetica", sans-serif;
   line-height: 1.5;
-  color:#808080;
+  color:var(--mk__grey);
   font-weight: normal;
   text-transform: uppercase;
   margin-right: 55px;
@@ -182,9 +184,15 @@ p {
   text-decoration: none;
   text-align: center;
   letter-spacing: 4px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
 }
 .nav__item:hover {
   color: #ffffff;
+}
+.nav__item:last-child {
+  margin-right: 0;
 }
 .slider__wrap {
   position: relative;
@@ -218,6 +226,9 @@ p {
   padding-top: 0;
   margin-top: -50px;
   z-index: 3;
+  outline: none;
+}
+.owl-one .owl-dot {
   outline: none;
 }
 
@@ -283,6 +294,11 @@ p {
   background-color: transparent !important;
   outline: none;
 } 
+
+.fa-4x:hover {
+  color: #869791;
+}
+
 .stuff__item{
   position: relative;
   display: block;
@@ -332,13 +348,15 @@ p {
 .fa-vk,
 .fa-instagram {
   color: var(--mk__blue);
-  font-size: 4em;
+  font-size: 4em !important;
   margin-top: 20px;
   margin-right: 20px;
   text-decoration: none;
 }
 
-i.fa:hover {
+.fa-envelope-o:hover,
+.fa-vk:hover,
+.fa-instagram:hover {
   color: #7dd2eb;
 }
 .burger,
@@ -346,20 +364,18 @@ i.fa:hover {
   display: none;
 }
 @media screen and (max-width: 1275px) {
+
   .header__respons {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .header__respons.is-active {
-    justify-content: flex-end;
-  }
   .burger {
       display: block;
-      width: 40px;
-      height: 14px;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      width: 50px;
+      margin-top: 18px;
+      margin-bottom: 8px;
+
     }
   .burger:hover {
       cursor: pointer;
@@ -368,24 +384,26 @@ i.fa:hover {
       height: 30px;
     }
   .burger__line {
-      width: 30px;
-      height: 4px;
-      margin-bottom: 5px;
-      background-color: #fff;
+      width: 50px;
+      height: 5px;
+      margin-bottom: 10px;
+      background-color: var(--mk__grey);
       position: relative;
-      border-radius: 20%;
+      border-radius: 15%;
     }
   .burger.is-active .burger__line-top {
       transform: rotate(-45deg);
-      top: 9px;
+      top: 15px;
+      background-color: #ffffff;
     }
     .burger.is-active .burger__line-middle {
       display: none;
     }
   .burger.is-active .burger__line-bottom {
       transform: rotate(45deg);
+      background-color: #ffffff;
     }
-  .nav__item-respons {
+  /*.nav__item-respons {
     display: inline;
     font-family: "mkHelvetica", sans-serif;
     color:#fff;
@@ -398,25 +416,38 @@ i.fa:hover {
   }
   .nav__item-respons.is-active {
     display: none;
-  }
-  .header__container {
+  }*/
+ .header__container {
       display: block;
-    }
+  } 
+
+  .header__container.is-active {
+    max-height: none;
+  }
   .header__nav--wrap {
       text-align: center;
       display: none;
+      background-color: var(--mk__blue);
+      
     }
-  .header__nav--wrap.is-active {
+  /*.header__nav--wrap.is-active {
       display: block;
-    }
+    }*/
   .nav--header {
       display: inline-block;
     }
+  .nav {
+    margin-bottom: 0;
+  }
   .nav__item {
       display: block;
       margin-right: 0;
-      margin-bottom: 30px;
+      margin-bottom: 0;
+      padding-top: 0;
+      transition: all 0.4s ease-in-out;
     }
+
+
   
   }
   
@@ -424,6 +455,17 @@ i.fa:hover {
 }
 @media screen and (max-width: 440px) {
 }
+
+.owl-one .owl-dots {
+  display: none;
+}
+/*.owl-one .owl-prev,
+.owl-one .owl-next,
+.owl-two .owl-prev,
+.owl-two .owl-next {
+  display: none;
+}*/
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

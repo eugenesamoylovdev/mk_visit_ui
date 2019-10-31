@@ -76,7 +76,9 @@
     $(document).on('click', '.burger', function(){
       $(this).toggleClass('is-active');
       $('.header__nav--wrap').toggleClass('is-active');
-      $('.nav__item-respons').toggleClass('is-active');
+      $('.header__container').toggleClass('is-active');
       $('.header__respons').toggleClass('is-active');
+      $('.header__nav--wrap').slideToggle('slow');
   })
+
   });
