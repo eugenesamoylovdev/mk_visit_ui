@@ -78,7 +78,7 @@
       $('.header__nav--wrap').toggleClass('is-active');
       $('.header__container').toggleClass('is-active');
       $('.header__respons').toggleClass('is-active');
-      $('.header__nav--wrap').slideToggle('slow');
+      $('.header__nav--wrap').slideToggle('0.1s');
   })
 
   });

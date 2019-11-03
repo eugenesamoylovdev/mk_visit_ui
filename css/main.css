@@ -112,6 +112,7 @@ textarea {
   --mk__blue: rgb(20 45 80);
   --text-color: #000;
   --mk__grey: #808080;
+  --mk__lightgrey: #cfcfcf;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "mkHelvetica", sans-serif;
@@ -125,7 +126,7 @@ p {
   color: var(--mk__blue);
 }
 .mk__footer {
-  background-color: #cfcfcf;
+  background-color:var(--mk__lightgrey);
 }
 
 .divider {
@@ -133,6 +134,8 @@ p {
   background-color: #e0e0e0;
 }
 
+/*========================================================================== 
+                    ГЛАВНАЯ*/
 .logo-wrap {
   text-align: center;
 }
@@ -394,14 +397,17 @@ p {
   .burger.is-active .burger__line-top {
       transform: rotate(-45deg);
       top: 15px;
-      background-color: #ffffff;
+      background-color: var(--mk__grey);
     }
     .burger.is-active .burger__line-middle {
       display: none;
     }
   .burger.is-active .burger__line-bottom {
       transform: rotate(45deg);
-      background-color: #ffffff;
+      background-color: var(--mk__grey);
+    }
+    .burger.is-active {
+      margin-bottom: 34px;
     }
   /*.nav__item-respons {
     display: inline;
@@ -430,7 +436,7 @@ p {
       background-color: var(--mk__blue);
       
     }
-  /*.header__nav--wrap.is-active {
+ /*.header__nav--wrap.is-active {
       display: block;
     }*/
   .nav--header {
@@ -446,7 +452,11 @@ p {
       padding-top: 0;
       transition: all 0.4s ease-in-out;
     }
-
+    
+    .cosmetics__foto {
+      max-width: 100%;
+      margin: auto;
+    }
 
   
   }
@@ -454,18 +464,29 @@ p {
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 440px) {
+  .owl-one .owl-dots {
+    display: none;
+  }
 }
+/*========================================================================== */
 
-.owl-one .owl-dots {
-  display: none;
+
+/*==========================================================================
+                АКЦИИ*/
+
+.sales__item-img {
+  width: 373px;
+  height: 373px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/*.owl-one .owl-prev,
-.owl-one .owl-next,
-.owl-two .owl-prev,
-.owl-two .owl-next {
-  display: none;
-}*/
-
+.sales__item-img:hover {
+  position: relative;
+  top: 0;
+  background-color: var(--mk__lightgrey);
+  transition: 0.3s ease-in-out;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
