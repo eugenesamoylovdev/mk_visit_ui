@@ -462,6 +462,10 @@ p {
   }
   
 @media screen and (max-width: 768px) {
+  .owl-one .owl-dots,
+  .owl-nav {
+    display: none;
+  }
 }
 @media screen and (max-width: 440px) {
   .owl-one .owl-dots {
