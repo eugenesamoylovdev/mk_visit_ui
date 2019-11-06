@@ -478,19 +478,70 @@ p {
 /*==========================================================================
                 АКЦИИ*/
 
-.sales__item-img {
-  width: 373px;
-  height: 373px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.sales__item-img:hover {
+.sales__item-wrap {
   position: relative;
-  top: 0;
-  background-color: var(--mk__lightgrey);
-  transition: 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 10px;
 }
+.sales__item-img {
+  display: block;
+  position: relative;
+  width: 100%;
+  opacity: 1;
+}
+
+.sales__item-img:hover {
+  transition: all 0.3s ease-in ;
+}
+
+.sales__item-info {
+  font-size: 14px;
+  color: var(--mk__blue);
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  margin: 0;
+}
+.sales-box {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  font-family: "mkHelvetica", sans-serif;
+  font-size: 14px;
+  height: 700px;
+  width: 657px;
+}
+
+.sales-box-times {
+  color: var(--mk__grey);
+  font-size: 2em !important;
+  margin-left: 103%;
+  cursor: pointer;
+}
+
+.sales-box h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+.sales-box .top {
+  padding: 0 20px 20px;
+  margin-top: -20px;
+}
+
+.sales-box .bottom {
+  background: #eee;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

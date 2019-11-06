@@ -79,6 +79,21 @@
       $('.header__container').toggleClass('is-active');
       $('.header__respons').toggleClass('is-active');
       $('.header__nav--wrap').slideToggle('0.1s');
-  })
+  });
+
 
   });
+
+
+/*Sales.html
+  $(document).ready(function()
+  {
+  $('#JPO').popup({
+    blur:true,
+    color:'#142d50',
+    closebutton:true,
+    keepfocus:true
+  });
+
+});*/
+    
