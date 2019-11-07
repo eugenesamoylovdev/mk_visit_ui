@@ -493,19 +493,10 @@ p {
 }
 
 .sales__item-img:hover {
-  transition: all 0.3s ease-in ;
+  opacity: 0.5;
+  transition: all 0.2s ease-in ;
 }
 
-.sales__item-info {
-  font-size: 14px;
-  color: var(--mk__blue);
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  position: relative;
-  top: 0px;
-  margin: 0;
-}
 .sales-box {
   border-radius: 5px;
   background: #fff;
@@ -518,7 +509,7 @@ p {
 
 .sales-box-times {
   color: var(--mk__grey);
-  font-size: 2em !important;
+  font-size: 3em !important;
   margin-left: 103%;
   cursor: pointer;
 }
@@ -540,6 +531,24 @@ p {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+@media screen and (max-width : 800px) {
+  .sales-box {
+    width: 480px;
+  }
+  .sales-box-times {
+    margin-left: 90%;
+  }
+}
+@media screen and (max-width : 480px) {
+  .sales-box {
+    width: 400px;
+  }
+
+  .sales-box-times {
+    margin-left: 90%;
+  }
+
+  }
 
 
 /* ==========================================================================
