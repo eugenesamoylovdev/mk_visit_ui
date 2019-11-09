@@ -85,15 +85,3 @@
   });
 
 
-/*Sales.html
-  $(document).ready(function()
-  {
-  $('#JPO').popup({
-    blur:true,
-    color:'#142d50',
-    closebutton:true,
-    keepfocus:true
-  });
-
-});*/
-    
