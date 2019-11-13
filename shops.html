@@ -1,0 +1,573 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="cropped-ikonMK (1).jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/brands.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/solid.css">
+  <link rel="stylesheet" href="css/all.css">
+  <script src="https://use.fontawesome.com/484e45f197.js"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <meta name="theme-color" content="#fafafa">
+  <script type="text/javascript">
+    ymaps.ready(init);							
+    var myMap, myPlacemark;
+
+    function init(){ 
+        
+        myMap = new ymaps.Map("map", {
+            center: [54.78259782, 32.05209538],
+            zoom: 16
+        }); 
+        
+        myPlacemark = new ymaps.Placemark([54.78229897, 32.05193345], {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+        
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
+    
+<script type="text/javascript">
+
+
+    function showSmolensk1() 
+    {
+        myMap.panTo([54.78259782, 32.05209538], {flying: false})
+        myPlacemark = new ymaps.Placemark([54.78229897, 32.05193345], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);
+    }
+    
+    function showSmolensk2() 
+    {
+        myMap.panTo([54.76235542, 32.10247218], {flying: false})
+        myPlacemark = new ymaps.Placemark([54.76217162, 32.10238043], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function showBrynsk1() 
+    {
+        myMap.panTo([53.2496,34.3694], {flying: false})
+        myPlacemark = new ymaps.Placemark([53.2496,34.3712], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function showBrynsk2() 
+    {
+        myMap.panTo([53.21782748934301,34.395570599197356], {flying: false})
+        myPlacemark = new ymaps.Placemark([53.21782748934301,34.395570599197356], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function showBrynsk3() 
+    {
+        myMap.panTo([53.30914142286854,34.303390855819686], {flying: false})
+        myPlacemark = new ymaps.Placemark([53.30914142286854,34.303390855819686], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function showBrynsk4() 
+    {
+        myMap.panTo([53.25830317253725,34.32426475396722], {flying: false})
+        myPlacemark = new ymaps.Placemark([53.25830317253725,34.32426475396722], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function klinchi() 
+    {
+        myMap.panTo([52.747050582128104,32.237964771163846], {flying: false})
+        myPlacemark = new ymaps.Placemark([52.747050582128104,32.237964771163846], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function orel1() 
+    {
+        myMap.panTo([52.96025989321082,36.066989741127045], {flying: false})
+        myPlacemark = new ymaps.Placemark([52.96025989321082,36.066989741127045], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function orel2() 
+    {
+        myMap.panTo([52.9488088541516,36.059648915344205], {flying: false})
+        myPlacemark = new ymaps.Placemark([52.9488088541516,36.059648915344205], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function orel3() 
+    {
+        myMap.panTo([52.96773925500909,36.08231931349178], {flying: false})
+        myPlacemark = new ymaps.Placemark([52.96773925500909,36.08231931349178], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function kursk1() 
+    {
+        myMap.panTo([51.7330,36.1412], {flying: false})
+        myPlacemark = new ymaps.Placemark([51.7326,36.1421], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function kursk2() 
+    {
+        myMap.panTo([51.739188250409406,36.195628999999904], {flying: false})
+        myPlacemark = new ymaps.Placemark([51.739188250409406,36.195628999999904], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function ironscity() 
+    {
+        myMap.panTo([52.33511564413242,35.35456487301628], {flying: false})
+        myPlacemark = new ymaps.Placemark([52.33511564413242,35.35456487301628], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+    
+    function kaluga() 
+    {
+        myMap.panTo([54.518741328598175,36.2528729576721], {flying: false})
+        myPlacemark = new ymaps.Placemark([54.518741328598175,36.2528729576721], 
+        {
+            balloonContent: 'Магазин "Мастер Класс"'
+        });
+       myMap.geoObjects.add(myPlacemark);									
+    }
+</script>
+
+
+<style>
+
+@font-face {
+  font-family: "mkHelvetica";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../media/fonts/Helvetica\ Neue\ thin.ttf) format("ttf");
+ }
+body{
+font-family: "mkHelvetica", sans-serif;
+}
+
+table {
+width: 100%;
+margin:0;
+padding:0;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+table tr {
+ line-height: 3;
+ font-size: 16px;
+}
+
+table th, table td {
+
+color: #142d50 !important;
+}
+
+table th {
+
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #142d50 !important;
+background: #7dd2eb;
+
+}
+@media screen and (max-width: 991px) {
+    table tr{
+        line-height: 1.5;
+    } 
+    table td {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+table {
+  padding-bottom: 0;
+  text-align: left;
+
+}
+
+table thead {
+  display: none;
+}
+
+table tr {
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+table td {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  
+}
+
+table td:last-child {
+  border-bottom: 0;
+}
+
+table td:before {
+  content: attr(data-label);
+  float: left;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+}
+
+ tbody tr.mycolor:hover {
+background: #7dd2eb; /* Цвет фона при наведении */
+/*color: #fff; */               /* Цвет текста при наведении */
+cursor: pointer;
+}
+
+</style>		
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <!--Логотип-->
+  <div class="container">
+    <div class="logo-wrap">
+              <a href="index.html">
+              <img src="media/mk_logo/main_logo.jpg" class="logo" alt="Сеть магазинов Мастер-класс">
+              </a>
+          </div>
+  </div>
+
+    <!--Меню-->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__respons">
+         <!-- <span class="nav__item-respons">МЕНЮ</span>  -->
+          <div class="burger">
+              <div class="burger__line burger__line-top"></div>
+              <div class="burger__line burger__line-middle"></div>
+              <div class="burger__line burger__line-bottom"></div>
+          </div>
+      </div>
+      <div class="header__nav--wrap">
+        <nav class="nav nav--header">
+         <a href="index.html" class="nav__item">ГЛАВНАЯ</a>
+         <a href="sales.html" class="nav__item">АКЦИИ|СКИДКИ</a>
+         <a href="mastercard.html" class="nav__item">КАРТА МАСТЕРА</a>
+         <a href="shops.html" class="nav__item"  style="color: #ffffff;">МАГАЗИНЫ|КОНТАКТЫ</a>
+         <a href="vacancy.html" class="nav__item">ВАКАНСИИ</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--Заголовок-->
+  <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 
+                style="display: block; text-align: center; margin-top: 20px; margin-bottom: 20px; font-size: 30px;">Магазины</h1>
+            </div>
+        </div>
+    </div>
+ </section>
+  <!--Разделитель-->
+<section class="divider" style="margin-bottom: 25px;"></section>
+
+    <!--Слайдер-->
+  <section>
+      <div class="container">
+     <!-- <div class="slider__wrap">-->
+        <div class="visible-sm">
+        <div class="owl-one owl-carousel owl-theme">
+          <img src="media/shops/shop1.jpg" alt="s1">
+          <img src="media/shops/shop2.jpg" alt="s2">
+          <img src="media/shops/shop3.jpg" alt="s3">
+          <img src="media/shops/shop4.jpg" alt="s4">
+          <img src="media/shops/shop5.jpg" alt="s5">
+          <img src="media/shops/shop6.jpg" alt="s6">
+        </div>
+    </div>
+  </div>
+  </section> 
+  <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 
+                    style="display: block; position: relative; text-align: center; margin-top: 45px; margin-bottom: 20px; font-size: 30px;">Добро пожаловать в магазины "Мастер Класс"!</h1>
+                </div>
+            </div>
+        </div>
+     </section>
+	
+<section>
+    <div class="container">
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left; border:0px; ">Город</th>
+      <th style="text-align:left; border:0px;">Улица</th>
+      <th style="text-align:left; border:0px;">Телефон</th>
+      <th style="text-align:left; border:0px;">График Работы</th>
+    </tr>
+  </thead>
+
+  <tbody>
+	
+    <tr class="mycolor" onclick=showSmolensk1();>
+      <td style="text-align:left; border:0px; padding-bottom: 0px; font-size: 16px;">Смоленск</td>
+      <td style="text-align:left; border:0px;  padding-bottom: 0px;font-size: 16px;">ул.Ленина, д.16</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4812)32-86-48" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4812)32-86-48</a><br></td>
+      <td style="text-align:left; border:0px; padding-bottom: 0px;font-size: 16px;">с 9.00 до 19.00</td>
+    </tr>
+
+    <tr class="mycolor" onclick=showSmolensk2();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Смоленск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">ул.Петра Алексеева, д.3б</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4812)56-81-83" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4812)56-81-83</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 9.00 до 21.00</td>
+    </tr>
+     <tr class="mycolor" onclick=showBrynsk1();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Брянск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">проспект Ленина, д.12</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4832)59-88-98" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4832)59-88-98</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 20.00</td>
+    </tr >
+     <tr class="mycolor" onclick=showBrynsk2();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Брянск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Московский проспект, д.22</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4832)63-80-84" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4832)63-80-84</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=showBrynsk3();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Брянск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">ул.3 Интернационала, д.6</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4832)59-59-74" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4832)59-59-74</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=showBrynsk4();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Брянск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">ул.Брянского Фрона, д.4</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(900)370-34-12" rel="nofollow" style="color:#142d50; text-decoration: none;">8(900)370-34-12</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=klinchi();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Клинцы, Брянская обл.</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">ул.Октябрьская, д.5</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(961)107-57-28" rel="nofollow" style="color:#142d50; text-decoration: none;">8(961)107-57-28</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 10.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=orel1();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Орел</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">ул.Комсомольская, д.25</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4862)44-23-12" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4862)44-23-12</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=orel2();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px; ">Орел</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">ул.Комсомольская, д.120</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4862)74-17-66" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4862)74-17-66</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=orel3();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Орел</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">ул.Пушкина, д.24</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4862)54-18-37" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4862)54-18-37</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=kursk1();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Курск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">проспект Хрущева, д.28/28а</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4712)55-09-06" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4712)55-09-06</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 10.00 до 18.00</td>
+    </tr>
+     <tr class="mycolor" onclick=kursk2();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Курск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">ул.Кати Зеленко, д.6б</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4712)70-30-50" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4712)70-30-50</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 18.00</td>
+    </tr>
+     <tr class="mycolor" onclick=ironscity();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Железногорск, Курская обл.</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">ул.Ленина, д.40/1</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8-906-693-22-38" rel="nofollow" style="color:#142d50; text-decoration: none;">8-906-693-22-38</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 10.00 до 20.00 </td>
+    </tr>
+     <tr class="mycolor" onclick=kaluga();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Калуга</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">ул.Рылеева, д.19</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4842)76-26-77" rel="nofollow" style="color:#142d50; text-decoration: none;">8(4842)76-26-77</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 19.00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</section>	
+<section> 
+    <div class="container">
+<div id="map" style="width: 100%; height: 450px; margin-top: 10px; margin-bottom: 10px;"><a name="bottom"></a></div>
+</div>  
+</section> 
+        <!--Футер-->
+<footer class="footer mk__footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="footer__item">
+            <div class="footer__item-content">
+              <span class="footer__item-title">Смоленск</span>
+              <br>
+              <span class="footer__item-links">214000, ул.Ленина, д.16</span>
+              <br>
+              <a href="tel:8(4812)65-67-36" class="footer__item-links">8(4812)65-67-36</a>
+              <br>
+              <a href="mailto:profalfa@yandex.ru" class="footer__item-links">profalfa@yandex.ru</a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-content">
+              <span class="footer__item-title">Брянск</span>
+              <br>
+              <span class="footer__item-links">241020, пр-т Московский, д.67-а</span>
+              <br>
+              <a href="tel:8(4832)63-55-04" class="footer__item-links">8(4832)63-55-04</a>
+              <br>
+              <a href="mailto:alfaprof32@yandex.ru" class="footer__item-links">alfaprof32@yandex.ru</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="footer__item">
+            <div class="footer__item-content">
+              <span class="footer__item-title">Орел</span>
+              <br>
+              <span class="footer__item-links">302001, ул.Комсомольская, д.25</span>
+              <br>
+              <a href="tel:8(4862)44-23-12" class="footer__item-links">8(4862)44-23-12</a>
+              <br>
+              <a href="mailto:alfaorel57@yandex.ru" class="footer__item-links">alfaorel57@yandex.ru</a>
+            </div>
+          </div>
+            <div class="footer__item">
+              <div class="footer__item-content">
+                <span class="footer__item-title">Калуга</span>
+                <br>
+                <span class="footer__item-links">248000, ул.Рылеева, д.19</span>
+                <br>
+                <a href="tel:8(4842)76-26-76" class="footer__item-links">8(4842)76-26-76</a>
+                <br>
+                <a href="mailto:alfaprof42@yandex.ru" class="footer__item-links">alfaprof42@yandex.ru</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+            <div class="footer__item">
+              <div class="footer__item-content">
+                <span class="footer__item-title">Курск</span>
+                <br>
+                <span class="footer__item-links">305003, пр.Хрущева, д.28/28а</span>
+                <br>
+                <a href="tel:8(4712)55-09-06" class="footer__item-links">8(4712)55-09-06</a>
+                <br>
+                <a href="mailto:alfaprof46@yandex.ru" class="footer__item-links">alfaprof46@yandex.ru</a>
+              </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item-content">
+                    <a href="mailto:profalfa@yandex.ru" class="footer__item-links">
+                      <i class="fa fa-envelope-o fa-2x"></i>
+                    </a>
+                    <a href="https://vk.com/sm_mk" class="footer__item-links" target="_blank">
+                      <i class="fa fa-vk fa-2x"></i>
+                    </a>
+                    <a href="http://instagram.com/mk_shopprof" target="_blank">
+                      <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </footer>
+   
+    
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+   
+  
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+  
+  </html>
+  

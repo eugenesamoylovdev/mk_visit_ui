@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    
+	<!--https://tech.yandex.ru/maps/jsbox/2.1/mapbasics-->
+	
+	<script type="text/javascript">
+        ymaps.ready(init);							
+        var myMap, myPlacemark;
+
+        function init(){ 
+			
+            myMap = new ymaps.Map("map", {
+                center: [54.78259782, 32.05209538],
+                zoom: 16
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([54.78229897, 32.05193345], {
+                balloonContent: 'Магазин "Мастер Класс"'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+		
+	<script type="text/javascript">
+  
+  function init(name)
+  {
+
+    if (name = showSmolensk1) {
+      myMap.panTo([54.78259782, 32.05209538], {flying: false})
+			myPlacemark = new ymaps.Placemark([54.78229897, 32.05193345], 
+			{
+                balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);  
+    }
+    else if (name = showSmolensk2) {
+      myMap.panTo([54.76235542, 32.10247218], {flying: false})
+			myPlacemark = new ymaps.Placemark([54.76217162, 32.10238043], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);							
+
+    } 
+    else if (name = showBrynsk1) {
+      myMap.panTo([53.2496,34.3694], {flying: false})
+			myPlacemark = new ymaps.Placemark([53.2496,34.3712], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);				
+    }
+    else if (name = showBrynsk2) {
+      myMap.panTo([53.21782748934301,34.395570599197356], {flying: false})
+			myPlacemark = new ymaps.Placemark([53.21782748934301,34.395570599197356], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);				
+    }
+    else if (name = showBrynsk3) {
+      myMap.panTo([53.30914142286854,34.303390855819686], {flying: false})
+			myPlacemark = new ymaps.Placemark([53.30914142286854,34.303390855819686], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+    }
+    else if (name = showBrynsk4) {
+      myMap.panTo([53.25830317253725,34.32426475396722], {flying: false})
+			myPlacemark = new ymaps.Placemark([53.25830317253725,34.32426475396722], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+    }
+  }; 
+	
+	/*	function showSmolensk1() 
+		{
+			myMap.panTo([54.78259782, 32.05209538], {flying: false})
+			myPlacemark = new ymaps.Placemark([54.78229897, 32.05193345], 
+			{
+                balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);
+		}
+		
+		function showSmolensk2() 
+		{
+			myMap.panTo([54.76235542, 32.10247218], {flying: false})
+			myPlacemark = new ymaps.Placemark([54.76217162, 32.10238043], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function showBrynsk1() 
+		{
+			myMap.panTo([53.2496,34.3694], {flying: false})
+			myPlacemark = new ymaps.Placemark([53.2496,34.3712], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function showBrynsk2() 
+		{
+			myMap.panTo([53.21782748934301,34.395570599197356], {flying: false})
+			myPlacemark = new ymaps.Placemark([53.21782748934301,34.395570599197356], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function showBrynsk3() 
+		{
+			myMap.panTo([53.30914142286854,34.303390855819686], {flying: false})
+			myPlacemark = new ymaps.Placemark([53.30914142286854,34.303390855819686], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function showBrynsk4() 
+		{
+			myMap.panTo([53.25830317253725,34.32426475396722], {flying: false})
+			myPlacemark = new ymaps.Placemark([53.25830317253725,34.32426475396722], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}*/
+		
+		function klinchi() 
+		{
+			myMap.panTo([52.747050582128104,32.237964771163846], {flying: false})
+			myPlacemark = new ymaps.Placemark([52.747050582128104,32.237964771163846], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function orel1() 
+		{
+			myMap.panTo([52.96025989321082,36.066989741127045], {flying: false})
+			myPlacemark = new ymaps.Placemark([52.96025989321082,36.066989741127045], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function orel2() 
+		{
+			myMap.panTo([52.9488088541516,36.059648915344205], {flying: false})
+			myPlacemark = new ymaps.Placemark([52.9488088541516,36.059648915344205], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function orel3() 
+		{
+			myMap.panTo([52.96773925500909,36.08231931349178], {flying: false})
+			myPlacemark = new ymaps.Placemark([52.96773925500909,36.08231931349178], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function kursk1() 
+		{
+			myMap.panTo([51.7330,36.1412], {flying: false})
+			myPlacemark = new ymaps.Placemark([51.7326,36.1421], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function kursk2() 
+		{
+			myMap.panTo([51.739188250409406,36.195628999999904], {flying: false})
+			myPlacemark = new ymaps.Placemark([51.739188250409406,36.195628999999904], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function ironscity() 
+		{
+			myMap.panTo([52.33511564413242,35.35456487301628], {flying: false})
+			myPlacemark = new ymaps.Placemark([52.33511564413242,35.35456487301628], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+		
+		function kaluga() 
+		{
+			myMap.panTo([54.518741328598175,36.2528729576721], {flying: false})
+			myPlacemark = new ymaps.Placemark([54.518741328598175,36.2528729576721], 
+			{
+				balloonContent: 'Магазин "Мастер Класс"'
+			});
+           myMap.geoObjects.add(myPlacemark);									
+		}
+    </script>
+	
+	
+	<style>
+
+	@font-face {
+    font-family: "HelveticaNeueLight";
+    url("/myfonts/HelveticaNeueLight/HelveticaNeueLight.ttf") format("truetype");
+  } 
+body{
+   font-family: HelveticaNeueLight;
+}
+
+  table {
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  table tr {
+    
+     font-size: 16px;
+  }
+
+  table th, table td {
+    
+    color: #142d50 !important;
+  }
+
+  table th {
+   
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #142d50 !important;
+    background: #7dd2eb;
+    
+  }
+/*
+  @media screen and (max-width: 600px) {
+
+    table {
+      border: 0;
+    }
+
+    table thead {
+      display: inline-block;
+    }
+
+    table tr {
+      display: inline-block;
+      
+    }
+
+    table td {
+      display: inline-block;
+      text-align: right;
+      font-size: 14px;
+     
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+*/
+     tbody tr.mycolor:hover {
+    background: #7dd2eb; /* Цвет фона при наведении */
+    /*color: #fff; */               /* Цвет текста при наведении */
+   }
+
+</style>		
+</head>
+
+<body>
+	
+	<table>
+  <thead>
+    <tr>
+      <th style="text-align:left; border:0px; ">Город</th>
+      <th style="text-align:left; border:0px;">Улица</th>
+      <th style="text-align:left; border:0px;">Телефон</th>
+      <th style="text-align:left; border:0px;">График Работы</th>
+    </tr>
+  </thead>
+
+  <tbody>
+	
+    <tr class="mycolor" onclick=init(showSmolensk1);>
+      <td style="text-align:left; border:0px; padding-bottom: 0px; font-size: 16px;">Смоленск</td>
+      <td style="text-align:left; border:0px;  padding-bottom: 0px;font-size: 16px;">Ленина, 16</td>
+       <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4812)32-86-48" rel="nofollow" style="color:#142d50;">8(4812)32-86-48</a><br></td>
+      <td style="text-align:left; border:0px; padding-bottom: 0px;font-size: 16px;">с 9.00 до 19.00</td>
+    </tr>
+
+    <tr class="mycolor" onclick=init(showSmolensk2);>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Смоленск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Петра - Алексеева, 3б</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4812)56-81-83" rel="nofollow" style="color:#142d50;">8(4812)56-81-83</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 9.00 до 21.00</td>
+    </tr>
+     <tr class="mycolor" onclick=init(showBrynsk1);>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Брянск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">проспект  Ленина, 12</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4832)59-88-98" rel="nofollow" style="color:#142d50;">8(4832)59-88-98</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 20.00</td>
+    </tr >
+     <tr class="mycolor" onclick=init(showBrynsk2);>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Брянск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Московский проспект, 22</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4832)63-80-84" rel="nofollow" style="color:#142d50;">8(4832)63-80-84</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=init(showBrynsk3);>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Брянск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">3 Интернационала, 6</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(4832)59-59-74" rel="nofollow" style="color:#142d50;">8(4832)59-59-74</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=init(showBrynsk4);>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Брянск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Брянского Фрона, 4</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(900)370-34-12" rel="nofollow" style="color:#142d50;">8(900)370-34-12</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=klinchi();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Клинцы, Брянская обл.</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">Октябрьская, 5</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;"><a href="tel:8(961)107-57-28" rel="nofollow" style="color:#142d50;">8(961)107-57-28</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px; font-size: 16px;">с 10.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=orel1();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Орел</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Комсомольская, 25</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4862)44-23-12" rel="nofollow" style="color:#142d50;">8(4862)44-23-12</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=orel2();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px; ">Орел</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Комсомольская, 120</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4862)74-17-66" rel="nofollow" style="color:#142d50;">8(4862)74-17-66</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=orel3();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Орел</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Пушкина, 24</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4862)54-18-37" rel="nofollow" style="color:#142d50;">8(4862)54-18-37</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 20.00</td>
+    </tr>
+     <tr class="mycolor" onclick=kursk1();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Курск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">проспект Хрущева 28/28а</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4712)55-09-06" rel="nofollow" style="color:#142d50;">8(4712)55-09-06</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 10.00 до 18.00</td>
+    </tr>
+     <tr class="mycolor" onclick=kursk2();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Курск</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Кати Зеленко, 6б</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4712)70-30-50" rel="nofollow" style="color:#142d50;">8(4712)70-30-50</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 18.00</td>
+    </tr>
+     <tr class="mycolor" onclick=ironscity();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Железногорск, Курская обл.</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Ленина, 40/1</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8-906-693-22-38" rel="nofollow" style="color:#142d50;">8-906-693-22-38</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 10.00 до 20.00 </td>
+    </tr>
+     <tr class="mycolor" onclick=kaluga();>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Калуга</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">Рылеева, 19</td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;"><a href="tel:8(4842)76-26-77" rel="nofollow" style="color:#142d50;">8(4842)76-26-77</a></td>
+      <td style="text-align:left; border:0px;padding-bottom: 0px;font-size: 16px;">с 9.00 до 19.00</td>
+    </tr>
+  </tbody>
+</table>
+	
+	
+	
+	
+	
+    <div id="map" style="width: 100%; height: 450px; margin-top: 10px;"><a name="bottom"></a></div>
+</body>
+
+</html>
