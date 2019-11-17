@@ -457,8 +457,11 @@ p {
       max-width: 100%;
       margin: auto;
     }
-
-  
+    
+    .stuff__foto {
+      margin: auto;
+    }
+    
   }
   
 @media screen and (max-width: 768px) {
@@ -567,6 +570,10 @@ p {
     height: 400px;
     text-align: center;
     margin: auto;
+  }
+
+  .vac_container {
+    text-align: center;
   }
   .card__img {
     width: 100%;
