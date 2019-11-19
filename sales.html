@@ -21,10 +21,9 @@
   <link rel="stylesheet" href="css/solid.css">
   <link rel="stylesheet" href="css/all.css">
   <script src="https://use.fontawesome.com/484e45f197.js"></script>
-  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+ 
   <script src="js/jquery.popupoverlay.js"></script>
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -59,7 +58,7 @@
       <div class="header__nav--wrap">
         <nav class="nav nav--header">
          <a href="index.html" class="nav__item">ГЛАВНАЯ</a>
-         <a href="sales.html" class="nav__item" style="color: #ffffff;">АКЦИИ|СКИДКИ</a>
+         <a href="sales.html" class="nav__item">АКЦИИ|СКИДКИ</a>
          <a href="mastercard.html" class="nav__item">КАРТА МАСТЕРА</a>
          <a href="shops.html" class="nav__item">МАГАЗИНЫ|КОНТАКТЫ</a>
          <a href="vacancy.html" class="nav__item">ВАКАНСИИ</a>
@@ -302,7 +301,7 @@
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
-  <!--<script src="js/main.js"></script>-->
+  
   <!--<script src="OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
   <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>-->
  
@@ -359,6 +358,16 @@ $(document).on('click', '.burger', function(){
   $('.header__nav--wrap').slideToggle('0.1s');
 });  
 </script>  
+<script>
+$(document).ready(function() { 
+      $('.nav__item').each(function () {
+          var location = window.location.href;
+          var link = this.href; 
+          if(location == link) {
+              $(this).addClass('is-active');
+          }
+      });
+  });</script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

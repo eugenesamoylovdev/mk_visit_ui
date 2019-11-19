@@ -80,8 +80,13 @@
       $('.header__respons').toggleClass('is-active');
       $('.header__nav--wrap').slideToggle('0.1s');
   });
-
-
+  $(document).ready(function() { 
+      $('.nav__item').each(function () {
+          var location = window.location.href;
+          var link = this.href; 
+          if(location == link) {
+              $(this).addClass('is-active');
+          }
+      });
   });
-
-
+});

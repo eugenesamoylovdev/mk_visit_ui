@@ -191,6 +191,9 @@ p {
   padding-bottom: 23px;
 
 }
+.nav__item.is-active {
+  color:#ffffff;
+}
 .nav__item:hover {
   color: #ffffff;
 }
