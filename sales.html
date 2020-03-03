@@ -1,379 +1,503 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="cropped-ikonMK (1).jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="css/brands.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/solid.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="https://use.fontawesome.com/484e45f197.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <link rel="shortcut icon" href="cropped-ikonMK (1).jpg" type="image/jpeg">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/brands.css">
-  <link rel="stylesheet" href="css/fontawesome.css">
-  <link rel="stylesheet" href="css/solid.css">
-  <link rel="stylesheet" href="css/all.css">
-  <script src="https://use.fontawesome.com/484e45f197.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
- 
-  <script src="js/jquery.popupoverlay.js"></script>
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <script src="js/jquery.popupoverlay.js"></script>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-  <!-- Add your site or application content here -->
-<div id="page">
-  <!--Логотип-->
-  <div class="container">
-    <div class="logo-wrap">
-              <a href="index.html">
-              <img src="media/mk_logo/main_logo.jpg" class="logo" alt="Сеть магазинов Мастер-класс">
-              </a>
-          </div>
-  </div>
+    <!-- Add your site or application content here -->
+    <div id="page">
+      <!--Логотип-->
+      <div class="container">
+        <div class="logo-wrap">
+          <a href="index.html">
+            <img
+              src="media/mk_logo/main_logo.jpg"
+              class="logo"
+              alt="Сеть магазинов Мастер-класс"
+            />
+          </a>
+        </div>
+      </div>
 
-    <!--Меню-->
-  <header class="header">
-    <div class="header__container">
-      <div class="header__respons">
-         <!-- <span class="nav__item-respons">МЕНЮ</span>  -->
-          <div class="burger">
+      <!--Меню-->
+      <header class="header">
+        <div class="header__container">
+          <div class="header__respons">
+            <!-- <span class="nav__item-respons">МЕНЮ</span>  -->
+            <div class="burger">
               <div class="burger__line burger__line-top"></div>
               <div class="burger__line burger__line-middle"></div>
               <div class="burger__line burger__line-bottom"></div>
+            </div>
           </div>
-      </div>
-      <div class="header__nav--wrap">
-        <nav class="nav nav--header">
-         <a href="index.html" class="nav__item">ГЛАВНАЯ</a>
-         <a href="sales.html" class="nav__item">АКЦИИ|СКИДКИ</a>
-         <a href="mastercard.html" class="nav__item">КАРТА МАСТЕРА</a>
-         <a href="shops.html" class="nav__item">МАГАЗИНЫ|КОНТАКТЫ</a>
-         <a href="vacancy.html" class="nav__item">ВАКАНСИИ</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+          <div class="header__nav--wrap">
+            <nav class="nav nav--header">
+              <a href="index.html" class="nav__item">ГЛАВНАЯ</a>
+              <a href="sales.html" class="nav__item">АКЦИИ|СКИДКИ</a>
+              <a href="mastercard.html" class="nav__item">КАРТА МАСТЕРА</a>
+              <a href="shops.html" class="nav__item">МАГАЗИНЫ|КОНТАКТЫ</a>
+              <a href="vacancy.html" class="nav__item">ВАКАНСИИ</a>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-  <main>
-  <section class="sales__title">
-     <div class="container">
-         <div class="row">
-             <div class="col-12">
-                 <h1 
-                 style="display: block; text-align: center; margin-top: 20px; margin-bottom: 20px; font-size: 30px;">Акции</h1>
-             </div>
-         </div>
-     </div>
-  </section>
-   <!--Разделитель-->
-<section class="divider"></section>
-<!--Акции-->
-<section class="sales">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4 col-sm-6">
-              <div class="sales__item-wrap" >
-                    <a href=""><img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img JPO1_open"></a>
-                </div> 
+      <main>
+        <section class="sales__title">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1
+                  style="display: block; text-align: center; margin-top: 20px; margin-bottom: 20px; font-size: 30px;"
+                >
+                  Акции
+                </h1>
+              </div>
             </div>
-         <div class="col-12 col-md-4 col-sm-6">
+          </div>
+        </section>
+        <!--Разделитель-->
+        <section class="divider"></section>
+        <!--Акции-->
+        <section>
+          <div id="preloader">
+            <div class="preloader"><span class="svg_anm"></span></div>
+          </div>
+        </section>
+        <section class="sales" id="sales">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4 col-sm-6">
                 <div class="sales__item-wrap">
-                    <a class="popup-link-1" href="">
-                      <img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img">
-                    </a>
-                  
+                  <a href=""
+                    ><img
+                      src="media/sales/фены-1.jpg"
+                      alt="s1"
+                      class="sales__item-img JPO1_open"
+                  /></a>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-sm-6">
+              </div>
+              <div class="col-12 col-md-4 col-sm-6">
                 <div class="sales__item-wrap">
-                    <a href=""><img src="media/sales/щипцы-e1491459586701.jpg" alt="s1" class="sales__item-img JPO3_open">
-                    </a>
-   
-                  
-                </div>
-            </div>
-       <!-- </div>-->
-        <!--<div class="row">-->
-            <div class="col-12 col-md-4 col-sm-6">
-              <div class="sales__item-wrap">
                   <a class="popup-link-1" href="">
-                    <img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img">
+                    <img
+                      src="media/sales/фены-1.jpg"
+                      alt="s1"
+                      class="sales__item-img"
+                    />
                   </a>
-                
-              </div>   
-            </div>
-            <div class="col-12 col-md-4 col-sm-6">
-                <div class="sales__item-wrap">
-                    <a class="popup-link-1" href="">
-                      <img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img">
-                    </a>
-                  
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-sm-6">
+              </div>
+              <div class="col-12 col-md-4 col-sm-6">
                 <div class="sales__item-wrap">
-                    <a class="popup-link-1" href="">
-                      <img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img">
-                    </a>
-                  
+                  <a href=""
+                    ><img
+                      src="media/sales/щипцы-e1491459586701.jpg"
+                      alt="s1"
+                      class="sales__item-img JPO3_open"
+                    />
+                  </a>
                 </div>
-            </div>
-        <!--</div>-->
-        <!--<div class="row">-->
-            <div class="col-12 col-md-4 col-sm-6">
-              <div class="sales__item-wrap">
+              </div>
+              <!-- </div>-->
+              <!--<div class="row">-->
+              <div class="col-12 col-md-4 col-sm-6">
+                <div class="sales__item-wrap">
                   <a class="popup-link-1" href="">
-                    <img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img">
+                    <img
+                      src="media/sales/фены-1.jpg"
+                      alt="s1"
+                      class="sales__item-img"
+                    />
                   </a>
-              </div>   
-            </div>
-            <div class="col-12 col-md-4 col-sm-6">
-                <div class="sales__item-wrap">
-                    <a class="popup-link-1" href="">
-                      <img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img">
-                    </a>
-                  
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-sm-6">
+              </div>
+              <div class="col-12 col-md-4 col-sm-6">
                 <div class="sales__item-wrap">
-                    <a class="popup-link-1" href="">
-                      <img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img">
-                    </a>
+                  <a class="popup-link-1" href="">
+                    <img
+                      src="media/sales/фены-1.jpg"
+                      alt="s1"
+                      class="sales__item-img"
+                    />
+                  </a>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-</main>
- <!--Футер-->
-<footer class="footer mk__footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <div class="footer__item">
-          <div class="footer__item-content">
-            <span class="footer__item-title">Смоленск</span>
-            <br>
-            <span class="footer__item-links">214000, ул.Ленина, д.16</span>
-            <br>
-            <a href="tel:8(4812)65-67-36" class="footer__item-links">8(4812)65-67-36</a>
-            <br>
-            <a href="mailto:profalfa@yandex.ru" class="footer__item-links">profalfa@yandex.ru</a>
-          </div>
-        </div>
-        <div class="footer__item">
-          <div class="footer__item-content">
-            <span class="footer__item-title">Брянск</span>
-            <br>
-            <span class="footer__item-links">241020, пр-т Московский, д.67-а</span>
-            <br>
-            <a href="tel:8(4832)63-55-04" class="footer__item-links">8(4832)63-55-04</a>
-            <br>
-            <a href="mailto:alfaprof32@yandex.ru" class="footer__item-links">alfaprof32@yandex.ru</a>
-            </div>
-          </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="footer__item">
-          <div class="footer__item-content">
-            <span class="footer__item-title">Орел</span>
-            <br>
-            <span class="footer__item-links">302001, ул.Комсомольская, д.25</span>
-            <br>
-            <a href="tel:8(4862)44-23-12" class="footer__item-links">8(4862)44-23-12</a>
-            <br>
-            <a href="mailto:alfaorel57@yandex.ru" class="footer__item-links">alfaorel57@yandex.ru</a>
-          </div>
-        </div>
-          <div class="footer__item">
-            <div class="footer__item-content">
-              <span class="footer__item-title">Калуга</span>
-              <br>
-              <span class="footer__item-links">248000, ул.Рылеева, д.19</span>
-              <br>
-              <a href="tel:8(4842)76-26-76" class="footer__item-links">8(4842)76-26-76</a>
-              <br>
-              <a href="mailto:alfaprof42@yandex.ru" class="footer__item-links">alfaprof42@yandex.ru</a>
+              </div>
+              <div class="col-12 col-md-4 col-sm-6">
+                <div class="sales__item-wrap">
+                  <a class="popup-link-1" href="">
+                    <img
+                      src="media/sales/фены-1.jpg"
+                      alt="s1"
+                      class="sales__item-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!--</div>-->
+              <!--<div class="row">-->
+              <div class="col-12 col-md-4 col-sm-6">
+                <div class="sales__item-wrap">
+                  <a class="popup-link-1" href="">
+                    <img
+                      src="media/sales/фены-1.jpg"
+                      alt="s1"
+                      class="sales__item-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-sm-6">
+                <div class="sales__item-wrap">
+                  <a class="popup-link-1" href="">
+                    <img
+                      src="media/sales/фены-1.jpg"
+                      alt="s1"
+                      class="sales__item-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-sm-6">
+                <div class="sales__item-wrap">
+                  <a class="popup-link-1" href="">
+                    <img
+                      src="media/sales/фены-1.jpg"
+                      alt="s1"
+                      class="sales__item-img"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-      </div>
-      <div class="col-12 col-lg-4">
-          <div class="footer__item">
-            <div class="footer__item-content">
-              <span class="footer__item-title">Курск</span>
-              <br>
-              <span class="footer__item-links">305003, пр.Хрущева, д.28/28а</span>
-              <br>
-              <a href="tel:8(4712)55-09-06" class="footer__item-links">8(4712)55-09-06</a>
-              <br>
-              <a href="mailto:alfaprof46@yandex.ru" class="footer__item-links">alfaprof46@yandex.ru</a>
+        </section>
+      </main>
+      <!--Футер-->
+      <footer class="footer mk__footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="footer__item">
+                <div class="footer__item-content">
+                  <span class="footer__item-title">Смоленск</span>
+                  <br />
+                  <span class="footer__item-links"
+                    >214000, ул.Ленина, д.16</span
+                  >
+                  <br />
+                  <a href="tel:8(4812)65-67-36" class="footer__item-links"
+                    >8(4812)65-67-36</a
+                  >
+                  <br />
+                  <a href="mailto:profalfa@yandex.ru" class="footer__item-links"
+                    >profalfa@yandex.ru</a
+                  >
+                </div>
+              </div>
+              <div class="footer__item">
+                <div class="footer__item-content">
+                  <span class="footer__item-title">Брянск</span>
+                  <br />
+                  <span class="footer__item-links"
+                    >241020, пр-т Московский, д.67-а</span
+                  >
+                  <br />
+                  <a href="tel:8(4832)63-55-04" class="footer__item-links"
+                    >8(4832)63-55-04</a
+                  >
+                  <br />
+                  <a
+                    href="mailto:alfaprof32@yandex.ru"
+                    class="footer__item-links"
+                    >alfaprof32@yandex.ru</a
+                  >
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="footer__item">
-              <div class="footer__item-content">
-                  <a href="mailto:profalfa@yandex.ru" class="footer__item-links">
+            <div class="col-12 col-lg-4">
+              <div class="footer__item">
+                <div class="footer__item-content">
+                  <span class="footer__item-title">Орел</span>
+                  <br />
+                  <span class="footer__item-links"
+                    >302001, ул.Комсомольская, д.25</span
+                  >
+                  <br />
+                  <a href="tel:8(4862)44-23-12" class="footer__item-links"
+                    >8(4862)44-23-12</a
+                  >
+                  <br />
+                  <a
+                    href="mailto:alfaorel57@yandex.ru"
+                    class="footer__item-links"
+                    >alfaorel57@yandex.ru</a
+                  >
+                </div>
+              </div>
+              <div class="footer__item">
+                <div class="footer__item-content">
+                  <span class="footer__item-title">Калуга</span>
+                  <br />
+                  <span class="footer__item-links"
+                    >248000, ул.Рылеева, д.19</span
+                  >
+                  <br />
+                  <a href="tel:8(4842)76-26-76" class="footer__item-links"
+                    >8(4842)76-26-76</a
+                  >
+                  <br />
+                  <a
+                    href="mailto:alfaprof42@yandex.ru"
+                    class="footer__item-links"
+                    >alfaprof42@yandex.ru</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="footer__item">
+                <div class="footer__item-content">
+                  <span class="footer__item-title">Курск</span>
+                  <br />
+                  <span class="footer__item-links"
+                    >305003, пр.Хрущева, д.28/28а</span
+                  >
+                  <br />
+                  <a href="tel:8(4712)55-09-06" class="footer__item-links"
+                    >8(4712)55-09-06</a
+                  >
+                  <br />
+                  <a
+                    href="mailto:alfaprof46@yandex.ru"
+                    class="footer__item-links"
+                    >alfaprof46@yandex.ru</a
+                  >
+                </div>
+              </div>
+              <div class="footer__item">
+                <div class="footer__item-content">
+                  <a
+                    href="mailto:profalfa@yandex.ru"
+                    class="footer__item-links"
+                  >
                     <i class="fa fa-envelope-o fa-2x"></i>
                   </a>
-                  <a href="https://vk.com/sm_mk" class="footer__item-links" target="_blank">
+                  <a
+                    href="https://vk.com/sm_mk"
+                    class="footer__item-links"
+                    target="_blank"
+                  >
                     <i class="fa fa-vk fa-2x"></i>
                   </a>
                   <a href="http://instagram.com/mk_shopprof" target="_blank">
                     <i class="fa fa-instagram fa-2x"></i>
                   </a>
+                </div>
               </div>
+            </div>
           </div>
         </div>
+      </footer>
     </div>
-  </div>
-</footer>
-</div>  
-<!--end of #page-->
+    <!--end of #page-->
 
-<section id="JPO1">
-    <div class="sales-box">
+    <section id="JPO1">
+      <div class="sales-box">
         <span class="sales-box-times JPO1_close">×</span>
         <div class="top">
-            <h2>СЕМИНАР: Салонные процедуры ухода KEUNE.
-                Дата: 20 ноября, 10:00.
-                
-                📋 лечебное тонирование SEMI:
-                - мягкие и плотные волосы с интенсивным блеском и любимым оттенком; идеально для техник рассветления (не поднимает базу); широкая цветовая палитра.
-                📋 SHINING
-                - процедура против пористости и для придания дополнительного блеска натуральным волосам.
-                📋 MIRACLE ELIXIR
-                - кератиновое насыщение поврежденных осветлением\обесцвечиванием волос.
-                
-                Проводит: Волкова Вера - технолог KEUNE HAIRCOSMETIC
-                Стоимость: бесплатно, с отработкой на модели
-                Запись и информация: 8-995-104-33-41</h2>
+          <h2>
+            СЕМИНАР: Салонные процедуры ухода KEUNE. Дата: 20 ноября, 10:00. 📋
+            лечебное тонирование SEMI: - мягкие и плотные волосы с интенсивным
+            блеском и любимым оттенком; идеально для техник рассветления (не
+            поднимает базу); широкая цветовая палитра. 📋 SHINING - процедура
+            против пористости и для придания дополнительного блеска натуральным
+            волосам. 📋 MIRACLE ELIXIR - кератиновое насыщение поврежденных
+            осветлением\обесцвечиванием волос. Проводит: Волкова Вера - технолог
+            KEUNE HAIRCOSMETIC Стоимость: бесплатно, с отработкой на модели
+            Запись и информация: 8-995-104-33-41
+          </h2>
         </div>
         <div class="bottom">
-            <img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img">
+          <img src="media/sales/фены-1.jpg" alt="s1" class="sales__item-img" />
         </div>
       </div>
-  </section>  
+    </section>
 
-<section id="JPO3">
+    <section id="JPO3">
       <div class="sales-box">
-          <span class="sales-box-times JPO3_close">×</span>
-          <div class="top">
-              <h2>СЕМИНАР: Салонные процедуры ухода KEUNE.
-                <br>
-                  Дата: 20 ноября, 10:00.
-                  <br>
-                  📋 лечебное тонирование SEMI:
-                  - мягкие и плотные волосы с интенсивным блеском и любимым оттенком; идеально для техник рассветления (не поднимает базу); широкая цветовая палитра.
-                  <br>
-                  📋 SHINING
-                  - процедура против пористости и для придания дополнительного блеска натуральным волосам.
-                  <br>
-                  📋 MIRACLE ELIXIR
-                  - кератиновое насыщение поврежденных осветлением\обесцвечиванием волос.
-                  <br>
-                  <br>
-                  Проводит: Волкова Вера - технолог KEUNE HAIRCOSMETIC
-                  <br>
-                  Стоимость: бесплатно, с отработкой на модели
-                  <br>
-                  Запись и информация: 8-995-104-33-41</h2>
-          </div>
-          <div class="bottom">
-              <img src="media/sales/щипцы-e1491459586701.jpg" alt="s1" class="sales__item-img">
-          </div>
+        <span class="sales-box-times JPO3_close">×</span>
+        <div class="top">
+          <h2>
+            СЕМИНАР: Салонные процедуры ухода KEUNE.
+            <br />
+            Дата: 20 ноября, 10:00.
+            <br />
+            📋 лечебное тонирование SEMI: - мягкие и плотные волосы с
+            интенсивным блеском и любимым оттенком; идеально для техник
+            рассветления (не поднимает базу); широкая цветовая палитра.
+            <br />
+            📋 SHINING - процедура против пористости и для придания
+            дополнительного блеска натуральным волосам.
+            <br />
+            📋 MIRACLE ELIXIR - кератиновое насыщение поврежденных
+            осветлением\обесцвечиванием волос.
+            <br />
+            <br />
+            Проводит: Волкова Вера - технолог KEUNE HAIRCOSMETIC
+            <br />
+            Стоимость: бесплатно, с отработкой на модели
+            <br />
+            Запись и информация: 8-995-104-33-41
+          </h2>
         </div>
-  </section>  
+        <div class="bottom">
+          <img
+            src="media/sales/щипцы-e1491459586701.jpg"
+            alt="s1"
+            class="sales__item-img"
+          />
+        </div>
+      </div>
+    </section>
 
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/plugins.js"></script>
 
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  
-  <!--<script src="OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
+    <!--<script src="OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
   <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>-->
- 
+    <script type="text/javascript">
+      $(window).on("load", function() {
+        $("#sales")
+          .delay(5000)
+          .fadeIn(2000);
+        $("#preloader")
+          .delay(5000)
+          .fadeOut("slow");
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $.fn.popup.defaults.pagecontainer = "#page";
+      });
+    </script>
+    <!--JPO1-->
+    <script>
+      $(document).ready(function() {
+        // Initialize the plugin
+        $("#JPO1").popup({
+          color: "#142d50",
+          opacity: 0.75,
+          focuselement: false,
+          detach: true,
+          transition: "all 0.3s"
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#JPO1").popup({ closebutton: true });
+      });
+    </script>
+    <!--JPO3-->
+    <script>
+      $(document).ready(function() {
+        // Initialize the plugin
+        $("#JPO3").popup({
+          color: "#142d50",
+          opacity: 0.75,
+          focuselement: false,
+          detach: true,
+          transition: "all 0.3s"
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#JPO3").popup({ closebutton: true });
+      });
+    </script>
 
-  <script>
-    $(document).ready(function() {
-    $.fn.popup.defaults.pagecontainer = '#page'
-    });
-  </script>
-  <!--JPO1-->
- <script>
-    $(document).ready(function() {
-      // Initialize the plugin
-      $('#JPO1').popup({
-        color: '#142d50',
-        opacity: 0.75,
-        focuselement: false,
-        detach: true,
-        transition: 'all 0.3s'
+    <!--Мобильное меню-->
+    <script>
+      $(document).on("click", ".burger", function() {
+        $(this).toggleClass("is-active");
+        $(".header__nav--wrap").toggleClass("is-active");
+        $(".header__container").toggleClass("is-active");
+        $(".header__respons").toggleClass("is-active");
+        $(".header__nav--wrap").slideToggle("0.1s");
       });
-    });
-  </script>
-  <script>
-      $(document).ready(function () {
-        $('#JPO1').popup({closebutton: true});
-      });
-      </script>
-  <!--JPO3-->    
-<script>
-    $(document).ready(function() {
-      // Initialize the plugin
-      $('#JPO3').popup({
-        color: '#142d50',
-        opacity: 0.75,
-        focuselement: false,
-        detach: true,
-        transition: 'all 0.3s'
-      });
-    });
-  </script>
-  <script>
-      $(document).ready(function () {
-        $('#JPO3').popup({closebutton: true});
-      });
-      </script>
- 
- <!--Мобильное меню-->
-<script>
-$(document).on('click', '.burger', function(){
-  $(this).toggleClass('is-active');
-  $('.header__nav--wrap').toggleClass('is-active');
-  $('.header__container').toggleClass('is-active');
-  $('.header__respons').toggleClass('is-active');
-  $('.header__nav--wrap').slideToggle('0.1s');
-});  
-</script>  
-<script>
-$(document).ready(function() { 
-      $('.nav__item').each(function () {
+    </script>
+    <script>
+      $(document).ready(function() {
+        $(".nav__item").each(function() {
           var location = window.location.href;
-          var link = this.href; 
-          if(location == link) {
-              $(this).addClass('is-active');
+          var link = this.href;
+          if (location == link) {
+            $(this).addClass("is-active");
           }
+        });
       });
-  });</script>
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function() {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
